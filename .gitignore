@@ -13,11 +13,6 @@ accountsTransformed.csv
 cluedata.txt
 .DS*
 .firebase
-serviceAccountKey.json
-firebaseConfig.ts
-firebase-debug.log
-wordlist.txt
-worddb.json
 .node-version
 
 # Created by https://www.gitignore.io/api/node,firebase
@@ -141,3 +136,7 @@ temp/
 .env.local
 
 .swc
+app/.yarn/
+functions/.yarn/
+/app/firebaseConfig.ts
+/serviceAccountKey.json

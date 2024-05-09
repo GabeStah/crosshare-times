@@ -12,8 +12,9 @@ const getPatronList = async (): Promise<string[]> => {
   const donations = await getCollection('donations').doc('donations').get();
   const validationResult = DonationsListV.decode(donations.data());
   if (validationResult._tag !== 'Right') {
-    console.error(PathReporter.report(validationResult).join(','));
-    throw new Error('Malformed donations list');
+    return [];
+    // console.error(PathReporter.report(validationResult).join(','));
+    // throw new Error('Malformed donations list');
   }
   const now = Date.now();
   lastUpdated = now;

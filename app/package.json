@@ -34,8 +34,8 @@
   "engines": {
     "node": "18"
   },
- "resolutions": {
-  "@types/mime": "3.0.4"
+  "resolutions": {
+    "@types/mime": "3.0.4"
   },
   "resolutionsComments": {
     "@types/mime": "https://github.com/firebase/firebase-admin-node/issues/2512"
